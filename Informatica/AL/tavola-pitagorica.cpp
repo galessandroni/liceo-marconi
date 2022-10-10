@@ -1,5 +1,9 @@
-// tavola-pitagorica.cpp : Questo file contiene la funzione 'main', in cui inizia e termina l'esecuzione del programma.
-//
+/*********************************************************************************************************************
+ * tavola-pitagorica.cpp                                                                                             *
+ * Generazione di una tavola pitagorica con c colonne e r righe                                                      *
+ *                                                                                                                   *
+ * Ciclo FOR                                                                                                         *
+ *********************************************************************************************************************/
 
 #include <iostream>
 // Colonne e righe della tavola pitagorica
