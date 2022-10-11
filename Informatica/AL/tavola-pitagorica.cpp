@@ -5,6 +5,7 @@
  * Ciclo FOR                                                                                                         *
  *********************************************************************************************************************/
 
+#include "stdafx.h"
 #include <iostream>
 // Colonne e righe della tavola pitagorica
 int c = 12, r = 12;
