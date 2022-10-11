@@ -24,8 +24,9 @@
 1. Comprendere il termine “furto di identità” e le sue implicazioni personali, finanziarie, lavorative, legali
 1. Identificare i metodi applicati per il furto di identità, quali acquisire informazioni a partire da oggetti e informazioni scartati (information diving); uso di dispositivi fraudolenti di lettura (skimming); inventare uno scenario pretestuoso (pretexting)
 
-## Sicurezza dei file 1.4.1 Comprendere gli effetti di attivare/disattivare le impostazioni di sicurezza relative alle macro
+## Sicurezza dei file
 
+1. Comprendere gli effetti di attivare/disattivare le impostazioni di sicurezza relative alle macro
 1. Comprendere i vantaggi e i limiti della cifratura. Comprendere l’importanza di non divulgare o di non perdere la password, la chiave o il certificato di cifratura
 1. Cifrare un file, una cartella, una unità disco
 1. Impostare una password per file quali: documenti, fogli di calcolo, file compressi
