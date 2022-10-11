@@ -1,22 +1,24 @@
 /*********************************************************************************************************************
- * tavola-pitagorica.cpp                                                                                             *
- * Generazione di una tavola pitagorica con c colonne e r righe                                                      *
- *                                                                                                                   *
- * Ciclo FOR                                                                                                         *
- *********************************************************************************************************************/
+* tavola-pitagorica.cpp                                                                                             *
+* Generazione di una tavola pitagorica con c colonne e r righe                                                      *
+*                                                                                                                   *
+* Ciclo FOR                                                                                                         *
+*********************************************************************************************************************/
 
 #include "stdafx.h"
 #include <iostream>
 // Colonne e righe della tavola pitagorica
 int c = 12, r = 12;
 
+// Restituisce il numero di cifre di un dato numero in modo ricorsivo
+unsigned numDigits(const unsigned n) {
+	if (n < 10) return 1;
+	return 1 + numDigits(n / 10);
+}
+
 // Numero di spazi da inserire tra un numero e il successivo
 void spazi(int n) {
-	int s = 3;
-	if (n > 9)
-		s = 2;
-	if (n > 99)
-		s = 1;
+	int s = 4 - numDigits(n);
 	for (int k = 0; k < s; k++)
 		std::cout << " ";
 }
