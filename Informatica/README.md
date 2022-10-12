@@ -49,7 +49,7 @@ Dal punto di vista dei contenuti il percorso ruota intorno alle seguenti aree te
 
 ## Classe quarta
 
-* `IS` struttura di Internet e servizi (modulo ECDL - IT secutiry);
+* `IS` struttura di Internet e servizi (modulo ECDL - IT security);
 * `BD` introduzione ai data base con Microsoft Access;
 * `AL` progettazione di siti web statici in linguaggio HTML e CSS; cenni ai sistemi CMS: WordPress e Joomla;
 * `AL` cenni alla progettazione di siti web dinamici in linguaggio JavaScritp.
