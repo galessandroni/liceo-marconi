@@ -14,8 +14,8 @@
 1. [Comprendere i motivi per proteggere le informazioni personali, quali evitare il furto di identità o le frodi, mantenere la riservatezza](1.2.2.%20furto-identità.md)
 1. [Comprendere i motivi per proteggere informazioni di lavoro su computer e dispositivi mobili, quali: evitare furti, utilizzi fraudolenti, perdite accidentali di dati, sabotaggi](1.2.3.%20informazioni-di-lavoro.md)
 1. [Identificare i principi comuni per la protezione, conservazione e controllo dei dati e della riservatezza, quali: trasparenza, scopi legittimi, proporzionalità delle misure in rapporto ai danni](1.2.4.%20protezione-dati-riservatezza.md)
-1. Comprendere i termini “soggetti dei dati” e “controllori dei dati”, e come si applicano nei due casi i principi di protezione, conservazione e controllo dei dati e della riservatezza
-1. Comprendere l’importanza di attenersi alle linee guida e alle politiche per l’uso dell’ICT e come fare per ottenerle
+1. [Comprendere i termini “soggetti dei dati” e “controllori dei dati”, e come si applicano nei due casi i principi di protezione, conservazione e controllo dei dati e della riservatezza](1.2.5.%20soggetto-controllori.md)
+1. [Comprendere l’importanza di attenersi alle linee guida e alle politiche per l’uso dell’ICT e come fare per ottenerle](1.2.6.%20linee-guida.md)
 
 ## Sicurezza personale
 
