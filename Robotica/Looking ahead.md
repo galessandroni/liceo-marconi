@@ -1,5 +1,7 @@
 # Looking ahead
 
+![Nadaone, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, attraverso Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Nadaone_rex-cinemas-switzerland_2005.jpg/1024px-Nadaone_rex-cinemas-switzerland_2005.jpg "Nadaone, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, attraverso Wikimedia Commons")
+
 In 1939, when I was 19 years old, I began to write a series of science ﬁction stories about robots. At the time, the word *robot* had been in existence for only 18 years; Karel Capek’s play, *R.U.R.*, in which the word had been coined, having been performed for the ﬁrst time in Europe in 1921. The concept, however, that of machines that could perform tasks with the apparent “intelligence” of human beings, had been in existence for thousands of years.
 
 Through all those years, however, robots in myth, legend, and literature had been designed only to point a moral. Generally, they were treated as examples of overweening pride on the part of the human designer; an effort to accomplish something that was reserved to God alone. And, inevitably, this overweening pride was overtaken by Nemesis (as it always is in morality tales), so that the designer was destroyed, usually by that which he had created.
