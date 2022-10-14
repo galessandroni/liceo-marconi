@@ -2,7 +2,8 @@
 
 L'idea è costruire dei _robot_ (entità con un comportamento automatizzato che simula l'intelligenza umana) che si sfidino a duello.
 
-_Ne resterà soltanto uno_ (cit.)
+> _Ne resterà soltanto uno_<br />
+> (cit.)
 
 ## Materiale necessario
 
