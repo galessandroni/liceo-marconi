@@ -19,25 +19,18 @@ const float Soglia1 = 100;
 const float Soglia2 = 1000;
 // Definizione delle variabili
 float importo, importo_scontato, importo_ivato;
-float soglia;
 
 void main() {
 	// Acquisizione importo
 	std::cout << "Inserisci importo: ";
 	std::cin >> importo;
 	// Calcolo dell'importo scontato
-	if (importo >= Soglia0 && importo < Soglia1) {
+	if (importo >= Soglia0 && importo < Soglia1)
 		importo_scontato = importo * (1 - Sconto0);
-		soglia = Sconto0;
-	}
-	if (importo >= Soglia1 && importo < Soglia2) {
+	if (importo >= Soglia1 && importo < Soglia2)
 		importo_scontato = importo * (1 - Sconto1);
-		soglia = Sconto1;
-	}
-	if (importo >= Soglia2) {
+	if (importo >= Soglia2)
 		importo_scontato = importo * (1 - Sconto2);
-		soglia = Sconto2;
-	}
 	// Calcolo dell'importo ivato
 	importo_ivato = importo_scontato * (1 + IVA);
 	// Esposizione dei risultati
