@@ -5,7 +5,6 @@
 *                                                                                                                    *
 **********************************************************************************************************************/
 
-//#include "stdafx.h"
 #include <iostream>
 
 // Definizione dell'Imposta sul Valore Aggiunto
