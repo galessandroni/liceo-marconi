@@ -21,3 +21,5 @@ Di questi componenti, batteria e interruttore vengono forniti dell'istituto.
 * I robot vengono disposti ai margini di un'arena;
 * all'interno dell'arena vi è un foro di di almeno $8~\text{cm}$ di diametro, tale che qualsiasi robot partecipante vi possa cadere se spinto;
 * vince l'ultimo robot che rimane all'interno dell'arena senza cadere nella trappola.
+
+![Un possibile prototipo del robot](Robot%20killer.png "Un possibile prototipo del robot (il file .stl consente di osservarlo in 3D")
