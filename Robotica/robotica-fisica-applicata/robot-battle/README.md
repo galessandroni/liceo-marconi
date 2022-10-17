@@ -14,7 +14,7 @@ L'idea è costruire dei _robot_ (entità con un comportamento automatizzato che 
 * una _mezzaluna_ da ancorare al motore per generare vibrazione e - quindi - movimento;
 * colla a caldo o supercolla.
 
-Di questi componenti, batteria e interruttore vengono forniti dell'istituto.
+Di questi componenti, motorino e interruttore vengono forniti dell'istituto.
 
 ## Regole
 
