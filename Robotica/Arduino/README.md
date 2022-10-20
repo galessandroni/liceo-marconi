@@ -4,3 +4,4 @@
 * **[Led comandato](led-pulsante)** Diodo led comandato da un pulsante
 * **[Led comandato da PC](led)** Diodo led (o altro dispositivo ON/OFF) comandato tramite tastiera via USB
 * **[Servomotore](servo)** Controllo angolare di un servomotore
+* **[Servomotore](servo-pot)** Controllo angolare di un servomotore tramite potenziometro
