@@ -28,8 +28,7 @@ int gg(int anno1, int anno2) {
 	return gg;
 }
 
-voi main()
-{
+void main() {
 	int anno1, anno2, giorni;
 
 	// Chiede gli anni di cui calcolare l'intervallo in giorni
