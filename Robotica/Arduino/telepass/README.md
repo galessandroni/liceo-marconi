@@ -6,3 +6,6 @@ Questa attività utilizza le seguenti risorse:
 * **cicalina piezoelettrica** (per emettere un segnale acustico all'inizio e al termine del processo)
 * **servomotore** (per alzare e abbassare la sbarra, costituita da una cannuccia).
 
+## Schema di montaggio
+
+![Schema di montaggio](telepass-schema-montaggio.svg)
