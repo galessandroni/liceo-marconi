@@ -24,4 +24,6 @@ Per la corretta comprensione di questo progetto è bene aver chiaro il funzionam
 * Infine, il **servomotore** riporta l'inclinazione della sbarra da a $90^\circ$ a $0^\circ$. Questo processo, come il precedente, dura $1,35~\text{s}$.
 * L'ultimo passo è un'attesa di $50~\text{ms}$ prima di verificare la presenza di un altro veicolo, attesa funzionale a ridurre il consumo energetico del dispositivo.
 
-https://raw.githubusercontent.com/galessandroni/liceo-marconi/classi/Robotica/Arduino/telepass/Telepass.mp4
+## Risultato in laboratorio
+
+![Breve video di 10 s che mostra il funzionamento del programma e del circuito](https://raw.githubusercontent.com/galessandroni/liceo-marconi/classi/Robotica/Arduino/telepass/Telepass.mp4)
