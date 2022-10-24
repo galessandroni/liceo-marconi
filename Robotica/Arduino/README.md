@@ -5,3 +5,4 @@
 * **[Led comandato da PC](led)** Diodo led (o altro dispositivo ON/OFF) comandato tramite tastiera via USB
 * **[Servomotore](servo)** Controllo angolare di un servomotore
 * **[Servomotore](servo-pot)** Controllo angolare di un servomotore tramite potenziometro
+* **[Servomotore e sensore di prossimità](telepass)** Controllo di un servomotore tramite sensore di prossimità
