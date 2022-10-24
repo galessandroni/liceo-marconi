@@ -2,7 +2,7 @@
  * SIMULAZIONE DI UN PARCHEGGIO/TELEPASS                       *
  *                                                             *
  * Questo codice riceve i dati provenienti dal sensore di      *
- * prossimita' HR-SC04, li analizza e, se rispondono a criteri *
+ * prossimita' HC-SR04, li analizza e, se rispondono a criteri *
  * prestabiliti, fa suonare una cicalina, alza la sbarra del   *
  * parcheggio, attende che il veicolo sia transitato, abbassa  *
  * la sbarra del parcheggio e suona nuovamente la cicalina.    *
