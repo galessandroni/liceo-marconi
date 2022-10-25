@@ -7,6 +7,8 @@
 
 #include "stdafx.h"
 #include <iostream>
+using namespace std;
+
 // Colonne e righe della tavola pitagorica
 int c = 12, r = 12;
 
@@ -20,20 +22,30 @@ unsigned numDigits(const unsigned n) {
 void spazi(int n) {
 	int s = 4 - numDigits(n);
 	for (int k = 0; k < s; k++)
-		std::cout << " ";
+		cout << " ";
 }
 
 // Formattazione delle righe e colonne
 void linea() {
-	std::cout << " ";
+	cout << " ";
 	// Inserisce la formattazione per ogni colonna
 	for (int j = 1; j <= c; j++)
-		std::cout << "+-----";
+		cout << "+-----";
 	// Chiude la colonna e va a capo
-	std::cout << "+\n";
+	cout << "+\n";
 }
+using namespace std;
 
-void main() {
+
+void main()
+{
+
+	// Inserimento dati
+	cout << "Numero di colonne: ";
+	cin >> c;
+	cout << "Numero di righe: ";
+	cin >> r;
+
 	// Controllo righe
 	for (int i = 1; i <= r; i++)
 	{
@@ -43,14 +55,14 @@ void main() {
 		for (int j = 1; j <= c; j++)
 		{
 			// Inserisce l'inizio cella
-			std::cout << " |";
+			cout << " |";
 			// Inserisce gli spazi per un corretto allineamento a destra
 			spazi(i*j);
 			// Inserisce il numero della tavola pitagorica
-			std::cout << i * j;
+			cout << i * j;
 		}
 		// Inserisce la fine cella e passa alla riga successiva
-		std::cout << " |\n";
+		cout << " |\n";
 	}
 	// Fine tabella
 	linea();
