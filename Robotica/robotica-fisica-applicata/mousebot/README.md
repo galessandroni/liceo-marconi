@@ -39,5 +39,7 @@ Il mouse e quello che vi è contenuto è estremamente leggero, pertanto non sar�
 
 Una soluzione a questo problema è invertire la posizione delle due batterie dopo l'utilizzo, dal momento che la batteria connessa ai motori viene utilizzata per la **marcia**, mentre l'altra solo per le **manovre** (svolta a sinistra, svolta a destra e retromarcia).
 
+Modello tridimensionale
 ##
 
+Una ![visione tridimensionale del MouseBot](MouseBot.stl) è disponibile qui. Non è stata pensata per essere stampata, ma per fornire un'idea del prodotto finito.
