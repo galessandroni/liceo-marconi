@@ -40,7 +40,7 @@ Di seguito si supporrà la velocità del suono nell'aria costante, pertanto, ave
 
 Questo significa che, se si riesce a comprendere il codice, lo schema di montaggio è composto soltanto dal microcontrollore Arduino, dal sensore di prossimità HC-SR04 e - letteralmente - quattro fili. 
 
-Si noti che la [[breadboard]] è facoltativa (i cavi potrebbero essere connessi direttamente al sensore). È invece opportuna in due contesti: 
+Si noti che la [breadboard](https://it.wikiversity.org/wiki/Breadboard) è facoltativa (i cavi potrebbero essere connessi direttamente al sensore). È invece opportuna in due contesti: 
 
 1. quando si desidera una discreta accuratezza nella misurazione delle distanze;
 1. quando, oltre al sensore di prossimità, si desiderano inserire anche altri componenti.
@@ -49,4 +49,69 @@ Naturalmente, nello schema di montaggio, l'alimentazione di Arduino è sottintes
 
 Lo schema di montaggio, come visibile in figura, è estremamente semplice. Il sensore deve essere alimentato e la sua alimentazione - $V_{cc}=5~\text{V}$, filo rosso, e $GND = 0~\text{V}$ - filo nero sono fornite da Arduino.
 
-Il sensore ha altri due pedini, uno chiamato <code>trigger</code>, al quale si invia un impulso di $10~\mu \text{s}$ per far partire l'impulso. Dopodiché vi è un secondo pedino, chiamato <code>echo</code>, che restituisce il tempo impiegato dal segnale a raggiungere il bersaglio (e ritornare). Pertanto, nel calcolo della distanza, questo tempo dovrà essere diviso per 2
+Il sensore ha altri due pedini, uno chiamato <code>trigger</code>, al quale si invia un impulso di $10~\mu \text{s}$ per far partire l'impulso. Dopodiché vi è un secondo pedino, chiamato <code>echo</code>, che restituisce il tempo impiegato dal segnale a raggiungere il bersaglio (e ritornare). Pertanto, nel calcolo della distanza, questo tempo dovrà essere diviso per 2.
+
+> Si è detto che la portata di questo sensore è $4~\text{m}$. Questo implica che dopo un tempo di attesa <math>t</math> pari, o superiore, a
+> $$t=2\frac{d_{max}}{c}=2\frac{4~\text{m}}{343~\text{m/s}}\simeq 24~\text{ms}$$
+> l'oggetto è fuori scala, ovvero oltre la distanza massima in cui può essere intercettato.
+
+## Codice
+
+Di seguito il codice utilizzato per visualizzare nel monitor seriale la distanza degli oggetti localizzati dal sensore.
+
+Da sottolineare che - per l'utilizzo di questo sensore - non è stato necessario includere nessuna libreria. È sufficiente stimare il tempo in cui <code>echo</code> si porta a livello alto. Per far questo viene utilizzata la funzione <code>pulseIn</code> che risponde esattamente a questo scopo, [come da documentazione ufficiale di Arduino](https://www.arduino.cc/reference/it/language/functions/advanced-io/pulsein/).
+
+```cpp
+/*
+    CONTROLLO DEL SENSORE DI PROSSIMITA' HR-SC04
+
+    Questo codice riceve i dati provenienti dal sensore di
+    prossimita' HR-SC04, li analizza e li mostra a video nel
+    monitor seriale.
+
+    3A/EN, ITIS "Enrico Mattei", Urbino, 16 Febbraio 2021
+*/
+
+// Definizione dei pin trigger ed echo
+#define trigger 2
+#define echo 3
+
+// Definizione della velocita' del suono (centimetri / microsecondo)
+#define c 0.0343
+
+// Definizione delle variabili
+long tempo;
+float spazio;
+
+void setup() {
+  // Definizione di input e output
+  pinMode(trigger, OUTPUT);
+  pinMode(echo, INPUT);
+
+  // Inizializzazione della comunicazione seriale
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Prima della misurazione si porta trigger a livello basso
+  digitalWrite(trigger, LOW);
+  delayMicroseconds(5);
+
+  // Invio di un impulso (porta trigger a livello alto per 10 microsecondi)
+  digitalWrite(trigger, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigger, LOW);
+
+  // Lettura di echo, tramite pulseIn, che restituisce la durata dell'impuso (in microsecondi)
+  // Il dato acquisito viene poi diviso per 2 (andata e ritorno)
+  tempo = pulseIn(echo, HIGH) / 2;
+  // Calcolo della distanza in centimetri
+  spazio = tempo * c;
+
+  // spazio viene visualizzata nel monitor seriale ([Ctrl] + [Maiusc] + M)
+  // approssimata alla prima cifra decimale
+  Serial.print("Distanza = " + String(spazio, 1) + " cm\n");
+
+  delay(50);
+}
+```
