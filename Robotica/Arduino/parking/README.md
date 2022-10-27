@@ -14,7 +14,7 @@ Infine, l'oggetto da individuare deve essere collocato in un angolo non superior
 
 Di seguito verranno riepilogati tutti i concetti di fisica classica che ''dovrebbero'' essere noti a uno studente (o ignoti, se questa esperienza venisse proposta nelle scuole primarie).
 
-L'eco si verifica quando un suono incontra un oggetto di dimensioni proporzionali alla sua lunghezza d'onda (simbolo <math>\lambda</math>). In questo caso, si ha:
+L'eco si verifica quando un suono incontra un oggetto di dimensioni proporzionali alla sua lunghezza d'onda (simbolo $\lambda$). In questo caso, si ha:
 
 $$\lambda=\frac{c}{f}=\frac{343~\text{m/s}}{40~\text{kHz}}\simeq 8,58~\text{mm}$$
 
