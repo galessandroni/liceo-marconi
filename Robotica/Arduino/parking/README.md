@@ -62,15 +62,13 @@ Di seguito il codice utilizzato per visualizzare nel monitor seriale la distanza
 Da sottolineare che - per l'utilizzo di questo sensore - non è stato necessario includere nessuna libreria. È sufficiente stimare il tempo in cui <code>echo</code> si porta a livello alto. Per far questo viene utilizzata la funzione <code>pulseIn</code> che risponde esattamente a questo scopo, [come da documentazione ufficiale di Arduino](https://www.arduino.cc/reference/it/language/functions/advanced-io/pulsein/).
 
 ```cpp
-/*
-    CONTROLLO DEL SENSORE DI PROSSIMITA' HR-SC04
-
-    Questo codice riceve i dati provenienti dal sensore di
-    prossimita' HR-SC04, li analizza e li mostra a video nel
-    monitor seriale.
-
-    3A/EN, ITIS "Enrico Mattei", Urbino, 16 Febbraio 2021
-*/
+/**************************************************************
+ *  CONTROLLO DEL SENSORE DI PROSSIMITA' HR-SC04              *
+ *                                                            *
+ *  Questo codice riceve i dati provenienti dal sensore di    *
+ *  prossimita' HR-SC04, li analizza e li mostra a video nel  *
+ *  monitor seriale.                                          *
+ **************************************************************/
 
 // Definizione dei pin trigger ed echo
 #define trigger 2
