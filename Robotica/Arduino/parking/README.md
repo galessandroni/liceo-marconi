@@ -24,13 +24,13 @@ In questo caso, la cosa più interessante è la distanza <math>d</math> del bers
 
 $$d=c \cdot t$$
 
-dove $c$ è la velocità del suono, che si considera costante, pari a $c=343~\text{m/s}$. Tuttavia il dispositivo scelto, Arduino, non utilizza le unità di misura del [[Il sistema internazionale di unità di misura (superiori)|Sistema Internazionale]] ma, per la misurazione del tempo, utilizza i microsecondi e (per nostro comodo) la distanza verrà espressa in centimetri.
+dove $c$ è la velocità del suono, che si considera costante, pari a $c=343~\text{m/s}$. Tuttavia il dispositivo scelto, Arduino, non utilizza le unità di misura del [Sistema Internazionale](https://it.wikiversity.org/wiki/Il_sistema_internazionale_di_unit%C3%A0_di_misura_(superiori)) ma, per la misurazione del tempo, utilizza i microsecondi e (per nostro comodo) la distanza verrà espressa in centimetri.
 
 Pertanto, con un'opportuna equivalenza, la velocità del suono diventa:
 
 $$c = 343~\text{m/s}=343~\text{m/s} \frac{10^2~\text{cm/m}}{10^6~\mu\text{s/s}}= 0,0343~\text{cm/}\mu\text{s}$$
 
-Quest'equivalenza è fondamentale per comprendere la linea 16 del codice.
+Quest'equivalenza è fondamentale per comprendere la linea 14 del codice.
 
 ## Schema di montaggio
 
