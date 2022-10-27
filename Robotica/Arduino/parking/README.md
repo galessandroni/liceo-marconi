@@ -115,3 +115,12 @@ void loop() {
   delay(50);
 }
 ```
+
+## Espansioni suggerite
+
+Questo progetto si presta a numerose espansioni.
+
+* In primo luogo qui si è ipotizzata la velocità del suono costante. Non è così: la velocità del suono varia al variare della temperatura. Pertanto si può migliorare il risultato inserendo un sensore di temperatura e - attraverso la temperatura acquisita - determinare la velocità del suono e una stima della posizione del bersaglio migliore.
+* Questi parametri possono essere mostrati mediante un display: così facendo non sarà più necessario l'utilizzo del computer.
+* Similmente - anzi, più semplicemente - possono essere espressi tramite segnali acustici, realizzando un vero e proprio sensore di parcheggio.
+* Infine, il sensore di prossimità può essere collocato al di sopra di un servomotore, così da simulare il comportamento di un radar. Quest'ultima applicazione è particolarmente suggestiva se si dispone di una [stampante 3D](https://it.wikipedia.org/wiki/Stampa_3D) con la quale stampare un supporto analogo a quello di un radar.
