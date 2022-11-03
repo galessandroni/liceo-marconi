@@ -29,3 +29,28 @@ e, naturalmente, ricordarsi di controllare queste due linee all'inizio del codic
 ```
 
 modificando `nome-melodia.h` con `happy-birthday.h` o il nome della melodia desiderata.
+
+### `pitches.h`
+
+Questo codice non deve essere modificato. Contiene tutte le frequenze delle note musicali e `REST`, $0~\text{Hz}$, utilizzato per le pause.
+
+### `nome-melodia.h`
+
+Questa libreria contiene:
+
+* la variabile `tempo` (numero di battute al minuto che determinano la velocità di l'esecuzione della melodia);
+* il vettore `melody[]`, contenente:
+  * la nota musicale da eseguire;
+  * la sua durata.
+
+Riguardo la durata, questa viene espressa come nella notazione nusicale dove i valori ammessi sono:
+
+| Nota | durata |
+|------|--------:|
+| semibreve | 1 |
+* minima 2
+* semiminima 4
+* croma 8
+* semicroma 16
+* biscroma 32
+* semibiscroma 64
