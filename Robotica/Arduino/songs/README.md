@@ -47,14 +47,14 @@ Riguardo la durata, questa viene espressa come nella notazione nusicale dove i v
 
 
 
-| Nota | Durata | Simbolo |
-|------|--------:|:---:|
-| semibreve | 1 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Music-wholenote.svg/50px-Music-wholenote.svg.png) |
-| minima | 2 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
-| semiminima | 4 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Music-quarternote.svg/50px-Music-quarternote.svg.png) |
-| croma | 8 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Music-eighthnote.svg/50px-Music-halfnote.svg.png) |
-| semicroma | 16 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
-| biscroma | 32 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
-| semibiscroma | 64 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
+| Nota | Durata | Inserire | Simbolo |
+|------|:----:|----:|:---:|
+| semibreve | $1/1$ | 1 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Music-wholenote.svg/50px-Music-wholenote.svg.png) |
+| minima | $1/2$ | 2 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
+| semiminima | $1/4$ | 4 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Music-quarternote.svg/50px-Music-quarternote.svg.png) |
+| croma | $1/8$ | 8 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Music-eighthnote.svg/50px-Music-eighthnote.svg.png) |
+| semicroma | $1/16$ | 16 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Music-sixteenthnote.svg/50px-Music-sixteenthnote.svg.png) |
+| biscroma | $1/32$ | 32 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Music-thirtysecondnote.svg/50px-Music-thirtysecondnote.svg.png) |
+| semibiscroma | $1/64$ | 64 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Sixtyfourth-note.svg/50px-Music-Sixtyfourth.svg.png) |
 
-Se si vogliono inserire
+Se si devono inserire punti di valore (per aumentare la durata della nota della sua metà) è sufficiente inserire il suo valore ma negativo.
