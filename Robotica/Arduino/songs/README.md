@@ -45,8 +45,6 @@ Questa libreria contiene:
 
 Riguardo la durata, questa viene espressa come nella notazione nusicale dove i valori ammessi sono:
 
-
-
 | Nota | Durata | Inserire | Simbolo |
 |------|:----:|----:|:---:|
 | semibreve | $1/1$ | 1 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Music-wholenote.svg/50px-Music-wholenote.svg.png) |
@@ -58,3 +56,7 @@ Riguardo la durata, questa viene espressa come nella notazione nusicale dove i v
 | semibiscroma | $1/64$ | 64 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Sixtyfourth-note.svg/50px-Music-Sixtyfourth.svg.png) |
 
 Se si devono inserire punti di valore (per aumentare la durata della nota della sua metà) è sufficiente inserire il suo valore ma negativo.
+
+Un esempio è il jingle di Pac-Man:
+ 
+![Pacman score](https://upload.wikimedia.org/score/k/6/k6rft9h0oedfwmdse0imitapqig06ja/k6rft9h0.png "Pacman score")
