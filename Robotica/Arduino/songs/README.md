@@ -73,3 +73,24 @@ Ecco lo schema di montaggio:
 Il montaggio è estremamente semplice: una volta inserita la cicalina piezoelettrica alla scheda e il gioco è fatto. Nel progetto la scelta del pin 11 non è casuale, ma dettata dal fatto che è possibile connettere la maggior parte di questi dispositivi (in particolare i più economici) direttamente sulla scheda Arduino grazie al pin GND vicino al pin 11 senza alcun ulteriore cablaggio.
 
 Naturalmente, è possibile utilizzare qualsiasi altro pin digitale. Basta ricordarsi di assegnare il numero del pin alla variabile `buzzer` nella linea 10 del codice.
+
+# Note sul codice
+
+Inizialmente viene calcolato il numero di note presenti nella nella melodia tramite la formula (linea 14):
+
+$$\text{notes} = \frac{\text{sizeof(melody)}}{\text{sizeof(melody[0])} \times 2}$$
+
+perché `sizeof` restituisce la dimensione in byte dell'array. Per il formato `int` alcuni modelli di Arduino usano 2 byte, altri 4 byte. Pertanto, per ottenere l'esatto numero di note si divide per il numero di byte occupato da un parametro (il primo) e si divide ulteriormente per 2 (nota e sua durata).
+
+A questo punto si calcola la durata (in millisecondi) di una semibreve, ricordando che la variabile `tempo` - in musica - esprime la durata di una semiminima (linea 17):
+
+$$\text{wholenote} = \frac{60.000 \times 4}{\text{tempo}}$$
+
+Restano due cose da sottilineare:
+
+* il ciclo `for` viene incrementato a passi di 2, per eseguire l'intera melodia;
+* la durata della singola nota è pari a `(wholenote) / abs(divider)`, dove il divisore è la sua durata;
+* nel caso il divisore sia negativo si aggiunge un 50% alla sua durata con `noteDuration *= 1.5`;
+* la nota viene quindi eseguita per il 90% del tempo;
+* il restante 10% serve a non far percepire come un unico suono note identiche e consecutive.
+
