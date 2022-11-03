@@ -7,3 +7,4 @@
 * **[Servomotore](servo-pot)** Controllo angolare di un servomotore tramite potenziometro
 * **[Sensore di prossimità](parking)** Misurazione della distanza con sensore a ultrasuoni
 * **[Servomotore e sensore di prossimità](telepass)** Controllo di un servomotore tramite sensore di prossimità
+* **[Musica](songs)** Generatore di jingle o musiche da inserire nel`setup`
