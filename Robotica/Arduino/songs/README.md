@@ -70,7 +70,7 @@ Ecco lo schema di montaggio:
   <img src="music_hardware.jpg" width="45%" /> 
 </p>
 
-Il montaggio è estremamente semplice: una volta inserita la cicalina piezoelettrica alla scheda e il gioco è fatto. Nel progetto la scelta del pin 11 non è casuale, ma dettata dal fatto che è possibile connettere la maggior parte di questi dispositivi (in particolare i più economici) direttamente sulla scheda Arduino grazie al pin GND vicino al pin 11 senza alcun ulteriore cablaggio.
+Il montaggio è estremamente semplice: una volta inserita la cicalina piezoelettrica alla scheda il gioco è fatto. Nel progetto la scelta del pin 11 non è casuale, ma dettata dal fatto che è possibile connettere la maggior parte di questi dispositivi (in particolare i più economici) direttamente sulla scheda Arduino grazie al pin GND vicino al pin 11 senza alcun ulteriore cablaggio.
 
 Naturalmente, è possibile utilizzare qualsiasi altro pin digitale. Basta ricordarsi di assegnare il numero del pin alla variabile `buzzer` nella linea 10 del codice.
 
