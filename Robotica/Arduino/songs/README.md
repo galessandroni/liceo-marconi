@@ -45,12 +45,16 @@ Questa libreria contiene:
 
 Riguardo la durata, questa viene espressa come nella notazione nusicale dove i valori ammessi sono:
 
-| Nota | durata |
-|------|--------:|
-| semibreve | 1 |
-* minima 2
-* semiminima 4
-* croma 8
-* semicroma 16
-* biscroma 32
-* semibiscroma 64
+
+
+| Nota | Durata | Simbolo |
+|------|--------:|:---:|
+| semibreve | 1 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Music-wholenote.svg/50px-Music-wholenote.svg.png) |
+| minima | 2 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
+| semiminima | 4 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Music-quarternote.svg/50px-Music-quarternote.svg.png) |
+| croma | 8 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Music-eighthnote.svg/50px-Music-halfnote.svg.png) |
+| semicroma | 16 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
+| biscroma | 32 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
+| semibiscroma | 64 | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Music-halfnote.svg/50px-Music-halfnote.svg.png) |
+
+Se si vogliono inserire
