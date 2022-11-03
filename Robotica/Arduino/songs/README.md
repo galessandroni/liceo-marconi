@@ -60,3 +60,16 @@ Se si devono inserire punti di valore (per aumentare la durata della nota della 
 Un esempio è il jingle di Pac-Man:
  
 ![Pacman score](https://upload.wikimedia.org/score/k/6/k6rft9h0oedfwmdse0imitapqig06ja/k6rft9h0.png "Pacman score")
+
+# Hardware
+
+Ecco lo schema di montaggio:
+
+<p float="left">
+  <img src="music_bb.png" width="45%" />
+  <img src="music_hardware.jpg" width="45%" /> 
+</p>
+
+Il montaggio è estremamente semplice: una volta inserita la cicalina piezoelettrica alla scheda e il gioco è fatto. Nel progetto la scelta del pin 11 non è casuale, ma dettata dal fatto che è possibile connettere la maggior parte di questi dispositivi (in particolare i più economici) direttamente sulla scheda Arduino grazie al pin GND vicino al pin 11 senza alcun ulteriore cablaggio.
+
+Naturalmente, è possibile utilizzare qualsiasi altro pin digitale. Basta ricordarsi di assegnare il numero del pin alla variabile `buzzer` nella linea 10 del codice.
