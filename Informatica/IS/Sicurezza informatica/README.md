@@ -27,6 +27,5 @@
 ## Sicurezza dei file
 
 1. [Comprendere gli effetti di attivare/disattivare le impostazioni di sicurezza relative alle macro](1.4.1.%20impostazioni%20di%20sicurezza%20relative%20alle%20macro.md)
-1. Comprendere i vantaggi e i limiti della cifratura. Comprendere l’importanza di non divulgare o di non perdere la password, la chiave o il certificato di cifratura
-1. Cifrare un file, una cartella, una unità disco
-1. Impostare una password per file quali: documenti, fogli di calcolo, file compressi
+1. [Comprendere i vantaggi e i limiti della cifratura. Comprendere l’importanza di non divulgare o di non perdere la password, la chiave o il certificato di cifratura](1.4.2.%20password.md)
+1. [Cifrare un file, una cartella, una unità disco e impostare una password per file quali: documenti, fogli di calcolo, file compressi](1.4.3.%20cifratura)
