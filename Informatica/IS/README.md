@@ -17,7 +17,7 @@ Al termine del percorso lo studente sarà in grado di:
 
 ## Contenuti
 
-**Concetti relativi alla sicurezza informatica**
+**(Concetti relativi alla sicurezza informatica)[Sicurezza informatica]**
 
 * Minacce informatiche
 * Valore delle informazioni
