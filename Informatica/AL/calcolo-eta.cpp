@@ -5,7 +5,7 @@
  * Ultima revisione: 17 novembre 2022
  ************************************/
 
-// Di seguito la libreria richiesta da Visual Studio
+// Questa libreria è richiesta da Visual Studio
 #include "stdafx.h"
 
 // Di seguito la libreria per gestire input e output
