@@ -18,9 +18,9 @@ using namespace std;
 #define AnnoCorrente 2022
 
 
-// main() è la funzione principale
+// main() Ã¨ la funzione principale
 // viene eseguita per prima
-// è "vuota" (void) nel senso che non restituisce nulla
+// Ã¨ "vuota" (void) nel senso che non restituisce nulla
 void main()
 {
 	// Definisco una variabile locale di tipo intero (int, numeri interi positivi e negativi)
@@ -38,4 +38,3 @@ void main()
 
 	system("pause");
 }
-
