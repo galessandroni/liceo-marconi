@@ -7,4 +7,6 @@ idraulici, per questo abbiamo realizzato una dimostrazione in scala ridotta di u
 compiti piuttosto interessanti con il nostro _braccio_, guardate il video qui sotto per capire meglio! Questo progetto è stato realizzato interamente
 con cartone e siringhe.
 
-![DIY Cardboard Hydraulic Arm](https://www.youtube.com/watch?v=Eqn4g2aQ70U)
+[![DIY Cardboard Hydraulic Arm](https://img.youtube.com/vi/Eqn4g2aQ70U/0.jpg)](https://www.youtube.com/watch?v=Eqn4g2aQ70U)
+
+
