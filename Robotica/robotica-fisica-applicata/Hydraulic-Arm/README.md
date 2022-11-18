@@ -95,7 +95,7 @@ Mescolate 4 colori con acqua in un bicchiere e riempite i 4 _controller_ (le sir
 
 Premete e tirate per vedere la magia!
 
-# È fatta!
+## È fatta!
 
 E il gioco è fatto! Ora provate il vostro nuovo braccio pneumatico. Prendete una lattina e cercate di posizionarla su un determinato bersaglio. Mostratelo ai vostri amici!
 
