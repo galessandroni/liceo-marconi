@@ -30,5 +30,7 @@ Tutti i pezzi sono stati progettati in modo da non dover effettuare misurazioni 
 
 Anche i fori per gli stuzzicadenti sono presenti, se avete altri dubbi sono state caricate molte immagini in modo che possiate avere una migliore comprensione visiva! Buon lavoro!
 
-* [HYDRAULIC ARM PARTS (template 1).pdf](HYDRAULIC%20ARM%20PARTS%20(template%201).pdf) <a title="Ethandcltd, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, attraverso Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Pdflogogt.png"><img width="64" alt="Pdflogogt" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Pdflogogt.png"></a>
+![Stampa/taglia/incolla](https://upload.wikimedia.org/wikipedia/commons/2/2c/Pdflogogt.png)
+
+* [HYDRAULIC ARM PARTS (template 1).pdf](HYDRAULIC%20ARM%20PARTS%20(template%201).pdf)
 * [BIG BASE (template 2).pdf](BIG%20BASE%20(template%202).pdf)
