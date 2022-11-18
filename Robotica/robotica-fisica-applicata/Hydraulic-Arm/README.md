@@ -24,3 +24,11 @@ L'intero progetto è racchiuso in due fogli di formato A4. Per prima cosa sono s
 
 Questo passaggio è stato reso molto semplice: tutto ciò che occorre fare è stampare i modelli riportati nella fase successiva. Se lo desiderate, potete modificare il disegno secondo i vostri gusti. 😎
 
+# Progetto del modello e della base
+
+Tutti i pezzi sono stati progettati in modo da non dover effettuare misurazioni e disegni. È sufficiente stampare i due file, con la stessa scala, perché tutti i pezzi abbiano le dimensioni corrette. Incollate le stampe sul cartone e iniziate a costruire!
+
+Anche i fori per gli stuzzicadenti sono presenti, se avete altri dubbi sono state caricate molte immagini in modo che possiate avere una migliore comprensione visiva! Buon lavoro!
+
+* [HYDRAULIC ARM PARTS (template 1).pdf](HYDRAULIC%20ARM%20PARTS%20(template%201).pdf) <a title="Ethandcltd, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, attraverso Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Pdflogogt.png"><img width="64" alt="Pdflogogt" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Pdflogogt.png"></a>
+* [BIG BASE (template 2).pdf](BIG%20BASE%20(template%202).pdf)
