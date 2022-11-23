@@ -6,19 +6,27 @@ Per vedere il proprio topo (okay, okay: _mouse_) prendere vita è sufficiente sv
   <img alt="Schema elettrico" src="https://github.com/galessandroni/liceo-marconi/blob/classi/Robotica/robotica-fisica-applicata/mousebot/schema-elettrico.svg" />
 </p>
 
+---
+
+Prima di iniziare mi sembra doveroso ringraziare [Tony--K](https://www.instructables.com/member/Tony--K/), l'ideatore di questo progetto.
+
+Thank you Tony!
+
+---
+
 ## Idea di base
 
-Tramite due motori, che verranno posizionati a $90^\circ$ l'uno dall'altro, come mostrato in figura.
+Il mouse prende vita grazie a due motori elettrici, che verranno posizionati a $90^\circ$ l'uno dall'altro, come mostrato in figura.
 
 ![MouseBot](MouseBot.png)
 
 **Attenzione** I due motori verranno alimentati da una batteria soltanto. Come visibile dallo schema elettrico, le due batterie sono connesse in serie e il terminale centrale e connesso a entrambi i motori.
 
-Se i _baffi_, dei comuni SPDT (ovvero switch _single-pole double-throw_) con un terminale **comune** (connesso all'altro capo del motore) e altri due
-terminali:
+I _baffi_ sono dei comuni SPDT (switch _single-pole double-throw_) con un terminale **comune** (connesso a un capo del motore), mentre gli altri due
+terminali sono connessi alle batterie:
 
-* quello **normalmente chiuso** connesso alla batteria con segno $+$;
-* quello **normalmente aperto** (chiuso solo quando il _baffo_ urta un ostacolo) connesso alla batteria con segno $-$.
+* quello **normalmente chiuso** connesso alla batteria con segno $+$ (per far avanzare il mouse);
+* quello **normalmente aperto** (chiuso solo quando il _baffo_ urta un ostacolo) connesso alla batteria con segno $-$ (per farlo retrocedere).
 
 Così facendo, il MouseBot avanzerà sempre, tranne quando urterà un ostacolo:
 
@@ -35,7 +43,7 @@ In ogni caso, la guida autonoma consente al MouseBot di divincolarsi da qualsias
 
 ## Problemi energetici
 
-Il mouse e quello che vi è contenuto è estremamente leggero, pertanto non sarà un problema alimentare i due motori con una singola batteria. Certo, si sarebbe potuto risolvere la questione con un [ponte ad H](https://it.wikipedia.org/wiki/H-bridge), ma si è pensato di procedere così per utilizzare un numero davvero esiguo di componenti.
+Il mouse e quello che vi è contenuto è estremamente leggero, pertanto non sarà un problema alimentare i due motori con una singola batteria. Certo, si sarebbe potuto risolvere la questione con un [ponte ad H](https://it.wikipedia.org/wiki/H-bridge), ma si è pensato di procedere così per utilizzare un numero fortemente ridotto di componenti.
 
 Una soluzione a questo problema è invertire la posizione delle due batterie dopo l'utilizzo, dal momento che la batteria connessa ai motori viene utilizzata per la **marcia**, mentre l'altra solo per le **manovre** (svolta a sinistra, svolta a destra e retromarcia).
 
