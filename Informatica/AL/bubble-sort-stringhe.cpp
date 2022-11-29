@@ -6,7 +6,7 @@
  * Altra notevole differenza, e' l'utilizzo delle classi.
  ***********************************************************************/
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class bubble {
@@ -23,20 +23,20 @@ class bubble {
         while(1) {
             cout << "\nInserire il numero di elementi dell'array: ";
             cin >> n;
-            if ( n <= 100 )
+            if ( n > 0 && n <= 100 )
                 break;
             else
-                cout << "\n L'array puo' contenere al massimo 100 elementi \n";
+                cout << "\nL'array puo' contenere al massimo 100 elementi.\n";
         }
 
-        // Display the header
+        // Mostra l'intestazione
         cout << "\n";
         cout << "----------------------------------\n";
         cout << "Inserire gli elemendi dell'array  \n";
         cout << "----------------------------------\n";
 
         // Acquisisce gli elementi dell'array
-        for( int i = 0; i < n; i++ ) {
+        for ( int i = 0; i < n; i++ ) {
             cout << "<" << i+1 << "> ";
             cin >> arr[i];
         }
@@ -45,12 +45,12 @@ class bubble {
     // Funzione bubble sort
     void bubblesort() {
       
-        // Finche' non c'è ordine           
+        // Finche' non c'è ordine
         while ( ok == 1 ) {
             ok = 0;
             // Si scorre l'array finche' questo non e' ordinato
-            for( int i = 0; i < n; i++ ) {
-                if( arr[i] > arr[i + 1] ) {
+            for ( int i = 0; i < n; i++ ) {
+                if ( arr[i] > arr[i + 1] ) {
                     string temp;
                     temp = arr[i];
                     arr[i] = arr[i + 1];
@@ -67,23 +67,24 @@ class bubble {
         cout << "----------------------------------\n";
         cout << "Elementi dell'array ordinato \n";
         cout << "----------------------------------\n";
-        for( int j = 0; j <= n; j++ )
-            cout << arr[j] << endl;
+        
+        for ( int i = 0; i <= n; i++ )
+            cout << arr[i] << endl;
     }
 };
 
 int main() {
-    // Instantiate an instance of class
-    bubble list;
+    // Crea un'istanza della classe
+    bubble lista;
     
-    // Function call to accept array elements
-    list.read();
+    // Richiama la funzione che popola l'array
+    lista.read();
     
-    // Function call to sort array
-    list.bubblesort();
+    // Richiama la funzione che ordina l'array
+    lista.bubblesort();
     
-    // Function call to display the sorted array
-    list.display();
+    // Richiama la funzione che mostra l'array ordinato
+    lista.display();
     
     return 0;
 }
