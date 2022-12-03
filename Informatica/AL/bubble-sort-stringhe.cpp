@@ -10,14 +10,16 @@
 using namespace std;
 
 class bubble {
-    public :
+    private :
     
     string arr[100];
     int ok = 1;
 
     // Numero di elementi nell'array
-    int n;
-
+    int n;   
+    
+    public :
+    
     // Funzione che popola l'array
     void read() {
         while(1) {
