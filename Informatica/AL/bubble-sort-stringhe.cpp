@@ -31,7 +31,7 @@ class bubble {
 };
 
 // Definisco la funzione che popola l'array
-bubble::read() {
+void bubble::read() {
     while(1) {
         cout << "\nInserire il numero di elementi dell'array: ";
         cin >> n;
@@ -55,7 +55,7 @@ bubble::read() {
 }
 
 // Definisco la funzione bubble sort
-bubble::bubblesort() {
+void bubble::bubblesort() {
     // Finche' non c'è ordine
     while ( ok == 1 ) {
         ok = 0;
@@ -73,7 +73,7 @@ bubble::bubblesort() {
 }
 
 // Definisco la funzione che espone il risultato
-bubble::display() {
+void bubble::display() {
     // Mostra l'intestazione
     cout << "\n";
     cout << "----------------------------------\n";
