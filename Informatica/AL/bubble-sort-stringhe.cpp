@@ -21,59 +21,68 @@ class bubble {
     public :
     
     // Funzione che popola l'array
-    void read() {
-        while(1) {
-            cout << "\nInserire il numero di elementi dell'array: ";
-            cin >> n;
-            if ( n > 0 && n <= 100 )
-                break;
-            else
-                cout << "\nL'array puo' contenere al massimo 100 elementi.\n";
-        }
-
-        // Mostra l'intestazione
-        cout << "\n";
-        cout << "----------------------------------\n";
-        cout << "Inserire gli elemendi dell'array  \n";
-        cout << "----------------------------------\n";
-
-        // Acquisisce gli elementi dell'array
-        for ( int i = 0; i < n; i++ ) {
-            cout << "<" << i+1 << "> ";
-            cin >> arr[i];
-        }
-    }
+    void read();
 
     // Funzione bubble sort
-    void bubblesort() {
-      
-        // Finche' non c'è ordine
-        while ( ok == 1 ) {
-            ok = 0;
-            // Si scorre l'array finche' questo non e' ordinato
-            for ( int i = 0; i < n; i++ ) {
-                if ( arr[i] > arr[i + 1] ) {
-                    string temp;
-                    temp = arr[i];
-                    arr[i] = arr[i + 1];
-                    arr[i + 1] = temp;
-                    ok = 1;
-                }
+    void bubblesort();
+
+    // Funzione che espone il risultato
+    void display();
+};
+
+// Definisco la funzione che popola l'array
+bubble::read() {
+    while(1) {
+        cout << "\nInserire il numero di elementi dell'array: ";
+        cin >> n;
+        if ( n > 0 && n <= 100 )
+            break;
+        else
+            cout << "\nL'array puo' contenere al massimo 100 elementi.\n";
+    }
+
+    // Mostra l'intestazione
+    cout << "\n";
+    cout << "----------------------------------\n";
+    cout << "Inserire gli elemendi dell'array  \n";
+    cout << "----------------------------------\n";
+
+    // Acquisisce gli elementi dell'array
+    for ( int i = 0; i < n; i++ ) {
+        cout << "<" << i+1 << "> ";
+        cin >> arr[i];
+    }
+}
+
+// Definisco la funzione bubble sort
+bubble::bubblesort() {
+    // Finche' non c'è ordine
+    while ( ok == 1 ) {
+        ok = 0;
+        // Si scorre l'array finche' questo non e' ordinato
+        for ( int i = 0; i < n; i++ ) {
+            if ( arr[i] > arr[i + 1] ) {
+                string temp;
+                temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+                ok = 1;
             }
         }
     }
+}
 
-    void display() {
-        // Mostra l'intestazione
-        cout << "\n";
-        cout << "----------------------------------\n";
-        cout << "Elementi dell'array ordinato \n";
-        cout << "----------------------------------\n";
-        
-        for ( int i = 0; i <= n; i++ )
-            cout << arr[i] << endl;
-    }
-};
+// Definisco la funzione che espone il risultato
+bubble::display() {
+    // Mostra l'intestazione
+    cout << "\n";
+    cout << "----------------------------------\n";
+    cout << "Elementi dell'array ordinato \n";
+    cout << "----------------------------------\n";
+    
+    for ( int i = 0; i <= n; i++ )
+        cout << arr[i] << endl;
+}
 
 int main() {
     // Crea un'istanza della classe
