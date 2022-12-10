@@ -1,7 +1,7 @@
 /**********************************************************************
  * bubble-sort-stringhe.cpp
- * 
- * Analogamente al bubble sort, questo algoritmo e' stato scritto per 
+ *
+ * Analogamente al bubble sort, questo algoritmo e' stato scritto per
  * ordinare stringhe.
  * Altra notevole differenza, e' l'utilizzo delle classi.
  ***********************************************************************/
@@ -10,58 +10,65 @@
 using namespace std;
 
 class bubble {
-    private :
-    
-    string arr[100];
-    int ok = 1;
+private:
 
+    // Stringa di appoggio per gli elementi da ordinare
+    string arr[100];
+    // Flag per definire se e' stato fatto uno spostamento
+    int ok = 1;
     // Numero di elementi nell'array
-    int n;   
-    
-    public :
-    
+    int n;
+
+    // Mostra l'intestazione
+    void intestazione(string testo) {
+        cout << "\n";
+        cout << "----------------------------------\n";
+        cout << testo << "\n";
+        cout << "----------------------------------\n";
+    }
+
+public:
+
     // Funzione che popola l'array
     void read();
 
     // Funzione bubble sort
     void bubblesort();
 
-    // Funzione che espone il risultato
+    // Funzione che stampa i risultati
     void display();
 };
 
-// Definisco la funzione che popola l'array
+// Funzione che popola l'array
 void bubble::read() {
-    while(1) {
+    while (1) {
         cout << "\nInserire il numero di elementi dell'array: ";
         cin >> n;
-        if ( n > 0 && n <= 100 )
+        if (n > 0 && n <= 100)
             break;
         else
             cout << "\nL'array puo' contenere al massimo 100 elementi.\n";
     }
 
     // Mostra l'intestazione
-    cout << "\n";
-    cout << "----------------------------------\n";
-    cout << "Inserire gli elemendi dell'array  \n";
-    cout << "----------------------------------\n";
+    intestazione("Inserire gli elemendi dell'array");
 
     // Acquisisce gli elementi dell'array
-    for ( int i = 0; i < n; i++ ) {
-        cout << "<" << i+1 << "> ";
+    for (int i = 0; i < n; i++) {
+        cout << "<" << i + 1 << "> ";
         cin >> arr[i];
     }
 }
 
-// Definisco la funzione bubble sort
+// Funzione bubble sort
 void bubble::bubblesort() {
+
     // Finche' non c'è ordine
-    while ( ok == 1 ) {
+    while (ok == 1) {
         ok = 0;
         // Si scorre l'array finche' questo non e' ordinato
-        for ( int i = 0; i < n; i++ ) {
-            if ( arr[i] > arr[i + 1] ) {
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > arr[i + 1]) {
                 string temp;
                 temp = arr[i];
                 arr[i] = arr[i + 1];
@@ -72,30 +79,28 @@ void bubble::bubblesort() {
     }
 }
 
-// Definisco la funzione che espone il risultato
+// Funzione che stampa i risultati
 void bubble::display() {
     // Mostra l'intestazione
-    cout << "\n";
-    cout << "----------------------------------\n";
-    cout << "Elementi dell'array ordinato \n";
-    cout << "----------------------------------\n";
-    
-    for ( int i = 0; i <= n; i++ )
+    intestazione("Elementi dell'array ordinato");
+
+    for (int i = 0; i <= n; i++)
         cout << arr[i] << endl;
 }
 
 int main() {
     // Crea un'istanza della classe
     bubble lista;
-    
+
     // Richiama la funzione che popola l'array
     lista.read();
-    
+
     // Richiama la funzione che ordina l'array
     lista.bubblesort();
-    
+
     // Richiama la funzione che mostra l'array ordinato
     lista.display();
-    
+
+    system("pause");
     return 0;
 }
