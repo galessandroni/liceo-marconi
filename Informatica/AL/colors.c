@@ -48,3 +48,5 @@ int main () {
   system("pause");
   return 0;
 }
+
+// Per le definizioni di tutti i colori si veda https://en.wikipedia.org/wiki/ANSI_escape_code
