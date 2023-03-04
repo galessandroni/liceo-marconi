@@ -13,7 +13,8 @@
  * (c) Giacomo Alessandroni, Feb 24th 2023, GNU/GPL 3.0
  * 
  ******************************************************************************/
- 
+
+#include <algorithm>
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -29,6 +30,8 @@ class codifica {
         // Acquisisce il testo
         void getText() {
             getline(cin, plainText);
+            // Converte il testo in maiuscolo
+            transform(plainText.begin(), plainText.end(), plainText.begin(), toupper);
         }
         
         // Imposta la chiave di cifratura
