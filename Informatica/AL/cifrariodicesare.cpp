@@ -61,7 +61,17 @@ class codifica {
                 else
                     plainText += ' ';
             cout << "|-> " << plainText << " <-|\n";
-        }        
+        }
+    
+    // Salva il file codificato
+    void save(string nomeFile) {
+
+    }
+
+    // Legge il file codificato
+    void read(string nomeFile) {
+
+    }
 };
 
 
@@ -83,6 +93,13 @@ int main()
     cout << "Di seguito il testo criptato\n"; 
     cifra.code();
 
+    // Salva il file codificato
+    cifra.save("file.txt");
+
+    // Legge il file codificato e
+    // inserisce il contenuto in codedText
+    cifra.read("file.txt");
+    
     // Imposta la chiave di decifratura
     cout << "Inserire la chiave di decifratura (1 ... 25): ";
     cifra.getKey();
