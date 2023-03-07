@@ -10,14 +10,14 @@
  * Chiede la chiave di decodifica
  * Mostra il risultato in chiaro (se la chiave e' corretta)
  * 
- * (c) Giacomo Alessandroni, Feb 24th 2023, GNU/GPL 3.0
+ * (c) 2023, Giacomo Alessandroni, GNU/GPL 3.0
  * 
  ******************************************************************************/
 
-#include <algorithm>
-#include <iostream>
-#include <string>
-#include <fstream>
+#include <algorithm>    // Aggiunge funzioni
+#include <iostream>     // Flusso dati con l'utente
+#include <string>       // Gestione delle stringhe
+#include <fstream>      // Flusso dati con i file
 
 using namespace std;
 
