@@ -23,6 +23,7 @@ using namespace std;
 
 class codifica {
     private:
+        string nameFile;    // Nome del file dove memorizzo il testo codificato
         string plainText;   // Testo in chiaro
         string codedText;   // Testo codificato
         int key = 0;        // Chiave di cifratura
@@ -70,7 +71,12 @@ class codifica {
 
     // Legge il file codificato
     void read(string nomeFile) {
-
+        nameFile = nomeFile;
+        
+          // Legge il file e riversa il contenuto della prima linea in codedText
+          ifstream MyReadFile(nameFile);
+          getline (MyReadFile, codedText);
+          MyReadFile.close();
     }
 };
 
