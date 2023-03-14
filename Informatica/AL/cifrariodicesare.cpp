@@ -14,7 +14,6 @@
  * 
  ******************************************************************************/
 
-#include <algorithm>    // Aggiunge funzioni
 #include <iostream>     // Flusso dati con l'utente
 #include <string>       // Gestione delle stringhe
 #include <fstream>      // Flusso dati con i file
@@ -27,12 +26,23 @@ class codifica {
         string plainText;   // Testo in chiaro
         string codedText;   // Testo codificato
         int key = 0;        // Chiave di cifratura
+    
+        // Metodo per la conversione dei caratteri in maiuscolo
+        string maiusc(string testo) {
+            string TESTO = "";
+            for (int i = 0; i < testo.length(); i++)
+                if (testo[i] >= 'a' && testo[i] <= 'z')
+                    TESTO += testo[i] - ('a' - 'A');
+                else
+                    TESTO += testo[i];
+            return TESTO;
+        }
     public:
         // Acquisisce il testo
         void getText() {
             getline(cin, plainText);
             // Converte il testo in maiuscolo
-            transform(plainText.begin(), plainText.end(), plainText.begin(), toupper);
+            plainText = maiusc(plainText);
         }
         
         // Imposta la chiave di cifratura
