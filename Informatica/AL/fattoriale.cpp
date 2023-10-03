@@ -5,8 +5,8 @@
  * Funzioni ricorsive                                                                                                *
  *********************************************************************************************************************/
 
-#include "stdafx.h"
 #include <iostream>
+using namespace std;
 
 // Algoritmo per il calcolo del fattoriale di un numero intero
 int fattoriale(int k) {
@@ -21,14 +21,13 @@ int fattoriale(int k) {
 }
 
 // Programma principale
-void main() {
+int main() {
   // Acquisisce il numero di cui calcolare il fattoriale  
   int n;
-  std::cout << "Inserire il numero di cui calcolare il fattoriale: ";
-  std::cin >> n;
+  cout << "Inserire il numero di cui calcolare il fattoriale: ";
+  cin >> n;
   
   // Calcola il fattoriale del numero dato ed espone il risultato
   int result = fattoriale(n);
-  std::cout << result;
-  system("pause");
+  cout << result;
 }
