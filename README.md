@@ -6,4 +6,4 @@ Materiale didattico per gli studenti del Liceo Scientifico, Musicale e Coreutico
 
 ## [Robotica](Robotica)
 
-## ## [Cpp-intro](Introduzione al C++)
+## [Introduzione al C++](Cpp-intro)
