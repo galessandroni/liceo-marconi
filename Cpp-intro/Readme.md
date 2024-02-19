@@ -22,4 +22,6 @@ Oppure, se ci si sente generosi, inserire testo e commenti a uso e consumo dei p
 
 Iniziamo!
 
+---
+
 [Il programma fannullone](fannullone.md)
