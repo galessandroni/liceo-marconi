@@ -55,3 +55,6 @@ complesse, miscelando testi, variabili e comandi come ```endl``` che significa *
 > Se, successivamente, ci fosse una seconda richiesta dati (es. il cognome), il termine ```Giovanni``` verrebbe assegnato
 > a questa seconda variabile.
 
+---
+
+[Quanti anni hai?](maggiorenni.md)
