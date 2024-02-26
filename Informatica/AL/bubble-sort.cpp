@@ -12,7 +12,7 @@ void scambia(int i) {
     elementi[i + 1] = app;
 }
 
-void main() {
+int main() {
     cout << "Quanti elementi vuoi ordinare (max 100): ";
     cin >> n;
 
@@ -36,5 +36,5 @@ void main() {
     for (int i = 1; i <= n; i++)
         cout << "Elemento n. " << i << ": " << elementi[i] << "\n";
 
-    system("pause");
+    return 0;
 }
