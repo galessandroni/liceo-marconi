@@ -1,20 +1,26 @@
 #include <iostream>
 using namespace std;
 
-// Definizioni dei colori
+// Definizione situazione standard (colore bianco, sfondo nero e nessuna formattazione)
+#define RESET   "\x1b[0m"
 
+// Definizioni dei colori
 #define RED     "\x1b[31m"
 #define GREEN   "\x1b[32m"
 #define YELLOW  "\x1b[33m"
 #define BLUE    "\x1b[34m"
 #define MAGENTA "\x1b[35m"
 #define CYAN    "\x1b[36m"
-#define RESET   "\x1b[0m"
 
 // Definizioni degli sfondi
+#define RED_GB    "\033[41m"
+#define GREEN_GB  "\033[42m"
 
-#define REDW    "\033[41m"
-#define GREENW  "\033[42m"
+// Definisco le formattazioni
+#define BOLD      "\033[1m"
+#define ITALIC    "\033[3m"
+#define UNDERLINE "\033[4m"
+#define SPOILER   "\033[8m"
 
 int main () {
 
@@ -25,10 +31,14 @@ int main () {
   cout << BLUE    << "Questo testo e' BLU!"     << RESET << "\n";
   cout << MAGENTA << "Questo testo e' MAGENTA!" << RESET << "\n";
   cout << CYAN    << "Questo testo e' CIANO!"   << RESET << "\n";
-  cout << RESET   << "Questo testo e' BIANCO!"  << RESET << "\n";
 
-  cout << REDW   << "Questo testo e' BIANCO su sfondo ROSSO!"  << RESET << "\n";
-  cout << GREENW << "Questo testo e' BIANCO su sfondo VERDE!"  << RESET << "\n";
+  cout << RED_GB   << "Questo testo e' BIANCO su sfondo ROSSO!"  << RESET << "\n";
+  cout << GREEN_GB << "Questo testo e' BIANCO su sfondo VERDE!"  << RESET << "\n";
+
+  cout << BOLD      << "Questo testo e' in grassetto"  << RESET << "\n";
+  cout << ITALIC    << "Questo testo e' in corsivo"  << RESET << "\n";
+  cout << UNDERLINE << "Questo testo e' sottolineato"  << RESET << "\n";
+  cout << RESET     << "Il colpevole e' il " << SPOILER << "maggiordomo" << RESET ".\n";
 
   cout << "\n\n";
 
@@ -45,7 +55,6 @@ int main () {
         cout << "\n";
     }
 
-  system("pause");
   return 0;
 }
 
