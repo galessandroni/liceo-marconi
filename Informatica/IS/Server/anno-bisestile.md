@@ -20,3 +20,6 @@ if ($anno % 400 == 0 || ($anno % 4 == 0 && $anno % 100 != 0)) {
 ```
 
 risponde con `Bisestile` oppure con `Non bisestile` a seconda del valore della variabile `$anno`.
+
+---
+**[File da utilizzare](anno-bisestile.php)**
