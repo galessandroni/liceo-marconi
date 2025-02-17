@@ -36,4 +36,4 @@ if ($offset == 7200) {
 ```
 
 ---
-
+**[File da utilizzare](ora-legale.php)**
