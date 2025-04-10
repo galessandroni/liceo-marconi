@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moltiplicazione di due numeri</title>
+    <script>
+        function moltiplica() {
+            // Ottieni i valori dai campi di input
+            var numero1 = document.getElementById("numero1").value;
+            var numero2 = document.getElementById("numero2").value;
+            
+            // Calcola il prodotto
+            var risultato = numero1 * numero2;
+            
+            // Mostra il risultato
+            document.getElementById("risultato").innerText = "Risultato: " + risultato;
+        }
+    </script>
+</head>
+<body>
+    <h1>Moltiplicazione di due numeri</h1>
+    <label for="numero1">Numero 1:</label>
+    <input id="numero1" required>
+    <br>
+    <label for="numero2">Numero 2:</label>
+    <input id="numero2" required>
+    <br>
+    <button onclick="moltiplica()">Moltiplica</button>
+    <h2 id="risultato"></h2>
+</body>
+</html>
